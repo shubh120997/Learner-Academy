@@ -1,0 +1,74 @@
+<html>
+	<head>
+	    <title></title>
+	</head>
+	<style>
+		h1{
+			text-align: center;
+	        color: rgb(128, 255, 128);
+	        border: 50ex;
+	        background-color: red; 
+		}
+		h3{
+	        color: crimson;	        
+		}
+		h5{
+		display: inline;
+		}
+		ol{
+	        list-style-type: decimal;
+	    }
+	</style>
+	<body>
+	    <h1> Welcome to Learner's Academy Portal </h1>
+		<h3> You have options to perform: </h3>
+		<ol>
+			<li> <a href="assignStudentToClass.jsp">Assign Student to Class</a> </li>
+			<li> <a href="assignTeacherToClass.jsp">Assign Teacher to Class</a> </li>
+			<li> <a href="assignSubjectToClass.jsp">Assign Subject to Class</a> </li>
+			<li>  <a href="assignTeacherToSubject.jsp">Assign Teacher to Subject</a> </li>
+			<li> <a href="chooseClassReport.jsp">Choose Class for report</a> </li>
+	        <li> 
+	        	<h4>Add the class: </h4> 
+	        	<form action="AddClass" method="post">
+	                Name: <input type="text" name="className" /> &nbsp;
+	                <input type="submit" value="Submit" /> <br /> <br />
+	                <h5>You want to view all classes? </h5>
+	                <a href="ViewClass.jsp">View Class</a>
+	            </form>
+	        </li>
+	        <li> 
+	        	<h4>Add the Subject </h4>
+	        	<form action="AddSub" method="post">
+	                Name: <input type="text" name="subjectName" /> &nbsp;
+	                <input type="submit" value="Submit" /> <br /> <br />
+	                <h5>You want to view all subjects? </h5>
+	                <a href="ViewSubject.jsp">View Subject</a>
+	            </form>        	 
+	       	</li>
+	        <li>  
+	        	<h4>Add the Teacher </h4>
+	        	<form action="AddTeach" method="post">
+	                Name: <input type="text" name="teacherName" /> &nbsp;
+	                <input type="submit" value="Submit" /> <br /> <br />
+	                <h5>You want to view all teachers? </h5>
+	                <a href="ViewTeacher.jsp">View Teacher</a>
+	            </form>
+	        </li>
+	        <li> 
+	        	<h4>Add the Student </h4>
+	        	<form action="AddStu" method="post">
+	                Name: <input type="text" name="studentName" /> <br/>
+	               	Email: <input type="text" name="studentMail" /> <br/>
+	               	Mobile Number: <input type="text" name="studentMobile" /> <br/>
+	                <input type="submit" value="Submit" /> <br /> <br />
+	                <h5>You want to view all students? </h5>
+	                <a href="ViewStudent.jsp">View Student</a>
+	            </form>
+	       	</li>
+	    </ol>
+	    <form action="Logout" method="post">
+	    <input type="submit" value="Logout" />
+	    </form>
+	</body>
+</html>
